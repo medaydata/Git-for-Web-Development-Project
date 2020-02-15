@@ -1,0 +1,132 @@
+https://codepen.io/mayoub/pen/JjdGQQL?editors=1100
+
+ 1. What is Semantic HTML? 
+    2. What is HTML used for? 
+            to create electronic documents (web pages) that are displayed on the World Wide Web
+    3. What is an attribute and where do we put it? 
+            Attributes are always specified in the start tag (or opening tag) and usually consists 
+           of name/value pairs like name="value" . Attribute values should always be enclosed in quotation marks.
+    4. What is the h1 tag used for? How many times should I use it on a page?
+          The <H1> HTML tag is usually used for the title of a page or post and it is the first header visible on a page.
+          Use only one H1 tag per page.
+    5. Name two tags that have required attributes
+      a and  img
+    6. What do we put in the head of our HTML document? 
+       Head tag
+    7. What is an id? 
+      (HTML attribute) Description. The id attribute provides a unique identifier for an element within the document
+    8. What elements can I add an id to? 
+        id attribute specifies a unique id for an HTML element 
+    9. How many times can I use the same id on a page? 
+        One time
+    10. What is a class? 
+        class attribute is used to define equal styles for elements with the same class
+    11. What elements can I add a class to? 
+         Name
+    12. How many times can I use the same class on a page? 
+        One time
+    13. How do I get my link to open in a new tab?
+         using nav tag
+    14. What is the alt attribute used for? 
+         to specify alternative text
+    15. How do I reference an id?
+         reference ID
+    16. What is the difference between a section and a div
+         Each section should be identified, typically by including a heading (h1-h6 element) as a child of the <section> element.
+         The <div> element has no special meaning at all. It represents its children
+    17. What is CSS used for? 
+        used to define the layout and appearance of webpages.
+    18. How to we select an element? Example - every h2 on the page
+        h2
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+        The difference between an ID and a class is that an ID can be used to identify one element,
+        whereas a class can be used to identify more than one.
+        class :  multiple 
+            <div class="widget"></div>
+            <div class="widget"></div>
+            <div class="widget"></div>
+         Id: unique
+           <ul id="nav">
+
+    20. How do we select classes in CSS?
+
+           (.) character, followed by the name of the class
+
+    21. How do we select a p element with a single class of “human””?
+           P.humain
+    22. What is a parent child selector? When would this be useful? 
+      -Child Selector: Child Selector is used to match all the elements which are child of a specified element  
+
+   used To selects all elements that are a direct child of the specified element whith a specific parent.
+    23. How do you select all links within a div with the class of sidebar?
+        a:link
+    24. What is a pseudo selector?
+        A CSS pseudo-element is a keyword added to a selector that lets you style a specific part of the selected element
+
+    25. What do we use the change the spacing between lines?
+       We use the line-height property
+    26. What do we use to change the spacing between letters?
+       We use the letter-spacing property 
+
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+      text-transform: uppercase
+      text-transform: lowercase
+      text-transform: capitalize
+    28. How do I add a 1px border around my div that is dotted and black?
+       border: 1px solid black;
+
+    29. How do I select everything on the page? 
+       The * selector selects all elements
+
+    30. How do I write a comment in CSS?
+       start a comment with /* , and end it with */ 
+
+    31. How do I find out what file I am in, when I am using the command line? 
+       Using command line : pwd 
+
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+      Using command line : ls
+
+    33. How do I remove a file via the command line? Why do I have to be careful with this?
+     Using command line : rm -rf directory 
+       we should be carfeful because all elements of that file will be removed .
+
+    34. Why should I use version control? 
+     We should use a version control like git to truck all changement in our code .
+
+    35. How often should I commit to github?
+    We can commit as often as we like.
+     
+    36. What is the command we would use to push our repo up to github? 
+      git push -u origin master
+
+    37. Walk me through Lambda's git flow. 
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element?
+     an inline element does not cause a line break (start on a new line) and does not take up the full width of a page, 
+     only the space bounded by its opening and closing tag. It is usually used within other HTML elements.
+     Other examples of inline elements are: anchor <a> tag, image <img> tag
+ 
+     A block-level element always starts on a new line and takes up the full width of a page, from left to right.
+     A block-level element can take up one line or multiple lines and has a line break before and after the element.
+     examples of the block-level tag are:  Heading tags <h1> to <h6>
+
+    2. What happens when an element is positioned absolutely? 
+     An absolutely positioned element is an element whose computed position value is absolute or fixed. The top, right,
+     bottom, and left properties specify offsets from the edges of the element's containing block. (The containing block
+     is the ancestor relative to which the element is positioned.) If the element has margins, they are added to the offset.
+     The element establishes a new block formatting context (BFC) for its contents.
+
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+     Using width, max-width and margin: auto;
+
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+    display inline by default : <div> defaults to block, <a> element (or anchor element)
+    diplay block by default   : <img> tag 
+ 
+    5. In your own words, explain the box model. What is the fix for the box model? 
+      The box model is the groupe of box (Margin, border, padding) wich wraps around every html element which can be changed 
+      to make up the style of that element as needed. 
+
